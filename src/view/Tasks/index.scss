@@ -1,0 +1,124 @@
+@use "../src/global.scss" as *;
+
+body {
+    background-color: $background-main;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-main {
+    color: $color-text-white;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 150px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 740px;
+    margin-top: 120px;
+    margin-bottom: 230px;
+}
+
+.form--titles {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    color: $color-text-white;
+}
+
+.line {
+    background-color: $background-white;
+    width: 100%;
+    height: 10px;
+}
+
+.itens {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.itens--div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.itens--space--start {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+}
+
+.itens--space--center {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.itens--space--end {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+
+.text-label {
+    color: $color-text-white;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-label-adicionar {
+    color: $color-text-white;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.editar {
+    width: 25px;
+    padding: 3px;
+}
+
+.excluir {
+    width: 25px;
+    padding: 3px;
+    margin-right: 15px;
+}
+
+.adicionar {
+    width: 15px;
+    padding: 3px;
+    margin-right: 20px;
+}
+
+.primaryBtn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: all 0.25s ease;
+  }
+  
+  .primaryBtn:hover {
+    transform: translateY(-2px);
+  }

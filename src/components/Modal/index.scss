@@ -1,0 +1,109 @@
+@use "../src/global.scss" as *;
+
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal {
+    width: 800px;
+    height: 430px;
+    background: $background-white;
+    color: $color-text-white;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .modalHeader {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $background-white;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .title-modal {
+    color: $color-text-black;
+    font-family: Raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  .modal-content {
+    text-align: center;
+    color: $color-text-black;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .modalActions {
+    position: absolute;
+    bottom: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .actionsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .deleteBtn {
+    margin: 0px 10px 75px 10px;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    color: $color-text-white;
+    background-color: $background-blue;
+    transition: all 0.25s ease;
+  }
+  
+  .deleteBtn:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cancelBtn {
+    margin: 0px 10px 75px 10px;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: $color-text-black;
+    background-color: $background-white;
+    border-radius: 10px;
+    border: 1px solid $color-text-black;   
+    transition: all 0.25s ease;
+  }
+  
+  .cancelBtn:hover {
+    transform: translateY(-5px);
+  }
