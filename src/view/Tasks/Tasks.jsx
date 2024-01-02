@@ -1,19 +1,24 @@
 import Header from '../../components/Header/Header'
 import './index.scss'
+import Dados from '../../components/Dados/Dados'
+import React, {useState} from "react";
 import Editar from '../../icons/Editar.svg'
 import Excluir from '../../icons/Excluir.svg'
-import Adicionar from '../../icons/Adicionar.svg'
-import Modal from '../../components/Modal/Modal'
-import React, { useState } from "react";
+import ModalExcluir from '../../components/Modal/ModalExcluir'
+import ModalAlterar from '../../components/Modal/ModalAlterar'
+import AdicionarDado from '../../components/Dados/AdicionarDado';
 
-const Tasks = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const Tasks = ({data}) => {
+
+  const [isOpenExcluir, setIsOpenExcluir] = useState(false);
+
+  const [isOpenAlterar, setIsOpenAlterar] = useState(false);  
+
   return (
     <div className='main'>
         <Header/>
-
         <h1 className='title-main'>Otimize seu tempo e se organize com o nosso Planejador Diário.</h1>
-
+        
         <div  className='form'>
           <div className='form--titles'>
             <h1>Tarefa</h1>
@@ -22,55 +27,91 @@ const Tasks = () => {
           </div>
 
           <div className='line'></div>
-
-          <div className='itens'>
-            <div className='itens--div'>
-              <div className='itens--space--start'><label className='text-label'> Limpar a casa </label></div>
-              <div className='itens--space--center'><input type="checkbox" name="myCheckbox" /></div>
-
-              <div className='itens--space--end'>     
-              <button className="primaryBtn" onClick={() => setIsOpen(true)}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              {isOpen && <Modal setIsOpen={setIsOpen} />}
-
-              <button className="primaryBtn" onClick={() => setIsOpen(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-              {isOpen && <Modal setIsOpen={setIsOpen} />}
-              </div>
- 
-            </div>
-
-            <div className='itens--div'>
-              <div className='itens--space--start'><label className='text-label'> Responder e-mails </label></div>
-              <div className='itens--space--center'><input type="checkbox" name="myCheckbox" /></div>
-              
-              <div className='itens--space--end'>
-              <button className="primaryBtn" onClick={() => setIsOpen(true)}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              {isOpen && <Modal setIsOpen={setIsOpen} />}
-
-              <button className="primaryBtn" onClick={() => setIsOpen(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-              {isOpen && <Modal setIsOpen={setIsOpen} />}
-              </div>
-              
-            </div>
-
-            <div className='itens--div'>
-              <div className='itens--space--start'><label className='text-label-adicionar'> Nova tarefa... </label></div>
-              <div className='itens--space--center'></div>
-              <div className='itens--space--end'>
-                <img className='adicionar' src={Adicionar} alt="Error"/>
-              </div>   
-            </div>
-
           </div>
-        </div>
-    </div>
+
+          <div className='main2'>
+            <Dados data={data[0]} />
+            <div>
+              <button className="primaryBtn" onClick={() => {
+                setIsOpenAlterar(true)
+              }}>
+              <img className='editar' src={Editar} alt="Error"/>
+              </button>
+              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
+              <img className='excluir' src={Excluir} alt="Error"/>
+              </button>
+            </div>
+            {isOpenExcluir && <ModalExcluir data={data[0]} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data[0]} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div>
+
+          <div className='main2'>
+            <Dados data={data[1]} />
+            <div>
+              <button className="primaryBtn" onClick={() => {
+                setIsOpenAlterar(true)
+              }}>
+              <img className='editar' src={Editar} alt="Error"/>
+              </button>
+              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
+              <img className='excluir' src={Excluir} alt="Error"/>
+              </button>
+            </div>
+            {isOpenExcluir && <ModalExcluir data={data[1]} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data[1]} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div>
+
+          <div className='main2'>
+            <Dados data={data[2]} />
+            <div>
+              <button className="primaryBtn" onClick={() => {
+                setIsOpenAlterar(true)
+              }}>
+              <img className='editar' src={Editar} alt="Error"/>
+              </button>
+              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
+              <img className='excluir' src={Excluir} alt="Error"/>
+              </button>
+            </div>
+            {isOpenExcluir && <ModalExcluir data={data[2]} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data[2]} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div>
+
+          <div className='main2'>
+            <Dados data={data[3]} />
+            <div>
+              <button className="primaryBtn" onClick={() => {
+                setIsOpenAlterar(true)
+              }}>
+              <img className='editar' src={Editar} alt="Error"/>
+              </button>
+              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
+              <img className='excluir' src={Excluir} alt="Error"/>
+              </button>
+            </div>
+            {isOpenExcluir && <ModalExcluir data={data[3]} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data[3]} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div>
+
+          <div className='main2'>
+            <Dados data={data[4]} />
+            <div>
+              <button className="primaryBtn" onClick={() => {
+                setIsOpenAlterar(true)
+              }}>
+              <img className='editar' src={Editar} alt="Error"/>
+              </button>
+              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
+              <img className='excluir' src={Excluir} alt="Error"/>
+              </button>
+            </div>
+            {isOpenExcluir && <ModalExcluir data={data[4]} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data[4]} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div>
+
+          <AdicionarDado/>
+  
+  </div>
   )
 }
 

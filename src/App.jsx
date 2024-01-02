@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import { Router } from "./routing";
 
 //utilizar esse mockup como exemplo
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App; */
+export default App; 

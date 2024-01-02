@@ -28,7 +28,7 @@
   }
   
   .modalHeader {
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,6 +46,16 @@
     font-weight: 600;
     line-height: normal;
     text-align: center;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .title-modal:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    cursor: text;
   }
   
   .modal-content {
@@ -56,6 +66,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: -20px;
   }
   
   .modalActions {
@@ -71,7 +82,7 @@
     align-items: center;
   }
   
-  .deleteBtn {
+  .cancelBtn {
     margin: 0px 10px 75px 10px;
     width: 250px;
     height: 80px;
@@ -85,11 +96,11 @@
     transition: all 0.25s ease;
   }
   
-  .deleteBtn:hover {
+  .cancelBtn:hover {
     transform: translateY(-5px);
   }
   
-  .cancelBtn {
+  .deleteBtn {
     margin: 0px 10px 75px 10px;
     width: 250px;
     height: 80px;
@@ -104,6 +115,27 @@
     transition: all 0.25s ease;
   }
   
-  .cancelBtn:hover {
+  .deleteBtn:hover {
     transform: translateY(-5px);
+  }
+
+  .inputDesc {
+    width: 70%;
+    height: 60px;
+    resize: none;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .inputDesc:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    cursor: text;
   }

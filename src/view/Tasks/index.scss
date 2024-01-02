@@ -11,9 +11,19 @@ body {
     align-items: center;
 }
 
+.main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 700px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 .title-main {
     color: $color-text-white;
-    font-family: Poppins;
+    font-family: $font-header;
     font-size: 35px;
     font-style: normal;
     font-weight: 600;
@@ -28,7 +38,7 @@ body {
     align-items: center;
     width: 740px;
     margin-top: 120px;
-    margin-bottom: 230px;
+    margin-bottom: 20px;
 }
 
 .form--titles {
@@ -55,7 +65,7 @@ body {
 .itens--div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
     margin-bottom: 15px;
 }
 
@@ -79,7 +89,7 @@ body {
 
 .text-label {
     color: $color-text-white;
-    font-family: Raleway;
+    font-family: $font-tarefas;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -88,7 +98,7 @@ body {
 
 .text-label-adicionar {
     color: $color-text-white;
-    font-family: Raleway;
+    font-family: $font-tarefas;
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
