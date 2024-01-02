@@ -1,6 +1,8 @@
 <div align="center">
 	<h1>Listagem de tarefas</h1>
 	<br>
+	### Acesse o link: https://dnc-react-js-challenge-main-lei2m2qat-ryansilvas-projects.vercel.app/
+	<br>
 	<p align="center">
 		<a href="https://www.linkedin.com/in/pedro-silva-24421228a/">
 		  <img alt="made by" src="https://img.shields.io/badge/made%20by-Pedro%20Silva-orange">
