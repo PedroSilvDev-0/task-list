@@ -2,11 +2,11 @@
 	<h1>Listagem de tarefas</h1>
 	<br>
 	<p align="center">
-		<a href="https://www.linkedin.com/in/felipejsborges/">
-		  <img alt="made by" src="https://img.shields.io/badge/made%20by-Felipe%20Borges-orange">
+		<a href="https://www.linkedin.com/in/pedro-silva-24421228a/">
+		  <img alt="made by" src="https://img.shields.io/badge/made%20by-Pedro%20Silva-orange">
 		</a>
-		<a href="https://github.com/felipejsborges/pokemon-challenge/commits/master">
-		  <img alt="last commit" src="https://img.shields.io/github/last-commit/felipejsborges/felipejsborges">
+		<a href="https://github.com/PedroSilvDev-0/">
+		  <img alt="last commit" src="https://img.shields.io/github/last-commit/PedroSilvDev-0/PedroSilvDev-0">
 		</a>
 	</p>
 </div>
@@ -54,15 +54,12 @@ $ npm run dev
 
 <hr>
 
-by Felipe Borges<br>
+by Pedro Silva <br>
 <div>
-	<a href="https://www.linkedin.com/in/felipejsborges">
+	<a href="https://www.linkedin.com/in/pedro-silva-24421228a/">
 		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/linkedin.svg" alt="LinkedIn">
 	</a>
-	<a href="https://wa.me/+55012996477129">
+	<a href="https://wa.me/+55088993505836">
 		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/whatsapp.svg" alt="WhatsApp">
-	</a>
-	<a href="mailto:felipejsborges@outlook.com">
-		<img width="32px" src="https://github.com/felipejsborges/felipejsborges/blob/master/assets/mail.svg" alt="E-mail">
 	</a>
 </div>
