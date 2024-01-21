@@ -7,6 +7,7 @@ import Excluir from '../../icons/Excluir.svg'
 import ModalExcluir from '../../components/Modal/ModalExcluir'
 import ModalAlterar from '../../components/Modal/ModalAlterar'
 import AdicionarDado from '../../components/Dados/AdicionarDado';
+import Footer from '../../components/Footer/Footer';
 
 const Tasks = ({data}) => {
 
@@ -49,7 +50,8 @@ const Tasks = ({data}) => {
                
 
           <AdicionarDado/>
-  
+          
+          <Footer/>
   </div>
   )
 }
