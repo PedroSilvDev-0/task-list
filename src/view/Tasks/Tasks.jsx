@@ -11,7 +11,7 @@ import AdicionarDado from '../../components/Dados/AdicionarDado';
 const Tasks = ({data}) => {
 
   const [isOpenExcluir, setIsOpenExcluir] = useState(false);
-
+  
   const [isOpenAlterar, setIsOpenAlterar] = useState(false);  
 
   return (
@@ -29,8 +29,9 @@ const Tasks = ({data}) => {
           <div className='line'></div>
           </div>
 
-          <div className='main2'>
-            <Dados data={data[0]} />
+        {data.map((data) => (
+            <div key={data.id} className='main2'>
+            <Dados data={data} />
             <div>
               <button className="primaryBtn" onClick={() => {
                 setIsOpenAlterar(true)
@@ -41,73 +42,11 @@ const Tasks = ({data}) => {
               <img className='excluir' src={Excluir} alt="Error"/>
               </button>
             </div>
-            {isOpenExcluir && <ModalExcluir data={data[0]} setIsOpenExcluir={setIsOpenExcluir} />}
-            {isOpenAlterar && <ModalAlterar data={data[0]} setIsOpenAlterar = {setIsOpenAlterar} />}
-          </div>
-
-          <div className='main2'>
-            <Dados data={data[1]} />
-            <div>
-              <button className="primaryBtn" onClick={() => {
-                setIsOpenAlterar(true)
-              }}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-            </div>
-            {isOpenExcluir && <ModalExcluir data={data[1]} setIsOpenExcluir={setIsOpenExcluir} />}
-            {isOpenAlterar && <ModalAlterar data={data[1]} setIsOpenAlterar = {setIsOpenAlterar} />}
-          </div>
-
-          <div className='main2'>
-            <Dados data={data[2]} />
-            <div>
-              <button className="primaryBtn" onClick={() => {
-                setIsOpenAlterar(true)
-              }}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-            </div>
-            {isOpenExcluir && <ModalExcluir data={data[2]} setIsOpenExcluir={setIsOpenExcluir} />}
-            {isOpenAlterar && <ModalAlterar data={data[2]} setIsOpenAlterar = {setIsOpenAlterar} />}
-          </div>
-
-          <div className='main2'>
-            <Dados data={data[3]} />
-            <div>
-              <button className="primaryBtn" onClick={() => {
-                setIsOpenAlterar(true)
-              }}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-            </div>
-            {isOpenExcluir && <ModalExcluir data={data[3]} setIsOpenExcluir={setIsOpenExcluir} />}
-            {isOpenAlterar && <ModalAlterar data={data[3]} setIsOpenAlterar = {setIsOpenAlterar} />}
-          </div>
-
-          <div className='main2'>
-            <Dados data={data[4]} />
-            <div>
-              <button className="primaryBtn" onClick={() => {
-                setIsOpenAlterar(true)
-              }}>
-              <img className='editar' src={Editar} alt="Error"/>
-              </button>
-              <button className="primaryBtn" onClick={() => setIsOpenExcluir(true)}>
-              <img className='excluir' src={Excluir} alt="Error"/>
-              </button>
-            </div>
-            {isOpenExcluir && <ModalExcluir data={data[4]} setIsOpenExcluir={setIsOpenExcluir} />}
-            {isOpenAlterar && <ModalAlterar data={data[4]} setIsOpenAlterar = {setIsOpenAlterar} />}
-          </div>
+            {isOpenExcluir && <ModalExcluir data={data} setIsOpenExcluir={setIsOpenExcluir} />}
+            {isOpenAlterar && <ModalAlterar data={data} setIsOpenAlterar = {setIsOpenAlterar} />}
+          </div> 
+        ))}
+               
 
           <AdicionarDado/>
   

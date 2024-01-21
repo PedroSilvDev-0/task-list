@@ -1,0 +1,56 @@
+@use "../src/global.scss" as *;
+
+.itens {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.itens--div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10px;
+    width: 480px;
+}
+
+.itens--space--start {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+}
+
+.itens--space--center {
+    width: 30%;
+    display: flex;
+    justify-content: start;
+}
+
+.text-label {
+    color: $color-text-white;
+    font-family: $font-tarefas;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.add {
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
+
+.add--space--end {
+    align-items: end;
+}
+
+.add--div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
